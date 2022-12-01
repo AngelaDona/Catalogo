@@ -47,12 +47,13 @@
     </nav>
     <!-- Tag div - (Aqui vamos trabalhar o header do site) -->
     <div class="tm-hero d-flex justify-content-center align-items-center" data-parallax="scroll" data-image-src="img/hero.jpg">
-        <form class="d-flex tm-search-form">
-            <input class="form-control tm-search-input" type="search" placeholder="Buscar" aria-label="Search">
-            <button class="btn btn-outline-success tm-search-btn" type="submit">
+        <div class="d-flex tm-search-form">
+            <input class="form-control tm-search-input" type="search" placeholder="Buscar" aria-label="Search" id="searchbar">
+            <button class="btn btn-outline-success tm-search-btn" onclick="search_catalogo()">
                     <i class="fas fa-search"></i>
+
             </button>
-        </form>   
+        </div>   
     </div>
     <!-- Tag div -Como Container - (Aqui vamos trabalhar o conteúdo do site) -->
     <div class="container-fluid tm-container-content tm=mt-60">
@@ -67,7 +68,7 @@
                 </form>
             </div>
              <div class="row tm-mb-90 tm-gallery">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -81,7 +82,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-02.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -95,7 +96,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-03.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -109,7 +110,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-04.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -123,7 +124,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-05.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -137,7 +138,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-06.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -151,7 +152,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-07.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -165,7 +166,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-08.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -179,7 +180,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-09.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -193,7 +194,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-10.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -207,7 +208,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-11.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -221,7 +222,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-12.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -235,7 +236,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-13.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -249,7 +250,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-14.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -263,7 +264,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-15.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -277,7 +278,7 @@
                         <span> 9,906 views</span>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 mb-5 filters">
                     <figure class="effect-ming tm-video-item">
                         <img src="img/img-16.jpg" alt="Image" class="img-fluid">
                         <figcaption class="d-flex align-items-center justify-content-center">
@@ -335,5 +336,6 @@
 </body>
 
 <script src="js/plugins.js"></script>
+<script src="js/buscar.js"></script>
 
 </html>
