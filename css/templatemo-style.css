@@ -629,4 +629,69 @@ select:not([multiple]) {
 }
     .filters {
         display: initial;
-    }
+}
+
+  
+    button:hover {
+        background-color: rgb(245, 247, 242);
+        color: grey;
+}
+  
+.curtir{
+    width: 50px;
+    height: 30px;
+    font-size: 10px;
+    background-color: #030c17;
+    color: white;
+}
+
+
+
+    .curtida1 {
+        color: black;
+}
+    .curtido1 {
+        color:red
+}
+    .curtida2 {
+        color: black;
+}
+    .curtido2 {
+        color:red
+}
+    .curtida3 {
+        color: black;
+}
+    .curtido3 {
+        color:red
+}
+    .curtida4 {
+        color: black;
+}
+    .curtido4 {
+        color:red
+}
+    .curtida5 {
+        color: black;
+}
+    .curtido5 {
+        color:red
+}
+    .curtida6 {
+        color: black;
+}
+    .curtido6 {
+        color:red
+}
+    .curtida7 {
+        color: black;
+}
+    .curtido7 {
+        color:red
+}
+    .curtida8 {
+        color: black;
+}
+    .curtido8 {
+    color:red
+}
